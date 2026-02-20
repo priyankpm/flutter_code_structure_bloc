@@ -1,0 +1,4 @@
+enum UsedTheme {
+  darkTheme,
+  lightTheme,
+}

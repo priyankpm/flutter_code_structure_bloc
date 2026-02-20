@@ -1,0 +1,12 @@
+{
+  "@@locale": "en",
+  "boardingTitle1" : "Boarding Title 1",
+  "boardingSubTitle1" : "Boarding Sub Title 1",
+  "boardingTitle2" : "Boarding Title 2",
+  "boardingSubTitle2" : "Boarding Sub Title 2",
+  "boardingTitle3" : "Boarding Title 3",
+  "boardingSubTitle3" : "Boarding Sub Title 3",
+  "splashScreen" : "Splash Screen",
+  "getStarted": "Get Started",
+  "next" : "Next"
+}
