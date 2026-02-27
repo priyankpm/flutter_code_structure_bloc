@@ -60,8 +60,11 @@ class _PageViewItemState extends State<PageViewItem> {
             ),
             BlocListener<OnboardingBloc, OnboardingState>(
               listener: (context, state) {
-                if (state.redirectHomeScreen) {
-                  AppNavigator.go(AppRoutes.homeScreen);
+                if(state.redirectLoginScreen){
+                  AppNavigator.go(AppRoutes.loginScreen);
+                }
+                else if (state.redirectHomeScreen) {
+                  AppNavigator.go(AppRoutes.dashboardScreen);
                 } else {
                   _pageController.animateToPage(
                     state.index,

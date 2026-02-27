@@ -8,5 +8,21 @@
   "boardingSubTitle3" : "Boarding Sub Title 3",
   "splashScreen" : "Splash Screen",
   "getStarted": "Get Started",
-  "next" : "Next"
+  "next" : "Next",
+  "loginScreen": "Login Screen",
+  "email" : "Email",
+  "enterEmail" : "Enter Email",
+  "password" : "Password",
+  "enterPassword": "Enter Password",
+  "login" : "Login",
+  "newUser" : "New User?",
+  "signUp" : "Sign Up",
+  "allReadyRegister" : "All Ready Register ?",
+  "name" : "Name",
+  "enterName" : "Enter Name",
+  "phoneNumber": "Phone Number",
+  "enterPhoneNumber": "Enter Phone Number",
+  "home" : "Home",
+  "upgrade" : "Upgrade",
+  "profile" : "Profile"
 }

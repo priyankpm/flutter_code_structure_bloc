@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:project_structure_bloc/presentation/pages/dashboard/dashboard_screen.dart';
 import 'package:project_structure_bloc/presentation/pages/home/home_screen.dart';
+import 'package:project_structure_bloc/presentation/pages/login/login_screen.dart';
 import 'package:project_structure_bloc/presentation/pages/onBoarding/onboarding_screen.dart';
+import 'package:project_structure_bloc/presentation/pages/sign_up/sign_up_screen.dart';
 import 'package:project_structure_bloc/presentation/pages/splash/splash_screen.dart';
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -9,7 +12,10 @@ final rootNavigatorKey = GlobalKey<NavigatorState>();
 class AppRoutes {
   static const String splashScreen = '/splashScreen';
   static const String onBoardingScreen = '/onBoardingScreen';
+  static const String dashboardScreen = '/dashboardScreen';
   static const String homeScreen = '/homeScreen';
+  static const String loginScreen = '/loginScreen';
+  static const String signUpScreen = '/signUpScreen';
 
   static final router = GoRouter(
     navigatorKey: rootNavigatorKey,
@@ -17,7 +23,10 @@ class AppRoutes {
     routes: [
       commonRoute(child: const SplashScreen(), path: splashScreen),
       commonRoute(child: const OnboardingScreen(), path: onBoardingScreen),
+      commonRoute(child: DashboardScreen(), path: dashboardScreen),
       commonRoute(child: const HomeScreen(), path: homeScreen),
+      commonRoute(child: const LoginScreen(), path: loginScreen),
+      commonRoute(child: const SignUpScreen(), path: signUpScreen),
     ],
   );
 }

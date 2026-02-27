@@ -20,7 +20,6 @@ class AppPreference {
   }
 
 
-
   static String getUsedThemeName() {
     final String? value = prefs.getString(_themeKey);
     if (value == null) {

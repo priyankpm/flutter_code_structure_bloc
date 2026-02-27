@@ -12,6 +12,19 @@ abstract interface class Spacing {
   static const double xxLarge = 32;
   static const double xxxLarge = 40;
   static const double xxxxLarge = 56;
+
+  static SizedBox height5() => const SizedBox(height: 5);
+  static SizedBox height8() => const SizedBox(height: 8);
+  static SizedBox height10() => const SizedBox(height: 10);
+  static SizedBox height15() => const SizedBox(height: 15);
+  static SizedBox height100() => const SizedBox(height: 100);
+  static SizedBox height20() => const SizedBox(height: 20);
+  static SizedBox height30() => const SizedBox(height: 30);
+  static SizedBox height50() => const SizedBox(height: 50);
+  static SizedBox width5() => const SizedBox(width: 5);
+  static SizedBox width10() => const SizedBox(width: 10);
+  static SizedBox width20() => const SizedBox(width: 20);
+  static SizedBox customHeight(double height) =>  SizedBox(height: height);
 }
 
 

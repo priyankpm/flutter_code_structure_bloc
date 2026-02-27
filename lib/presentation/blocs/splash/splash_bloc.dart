@@ -18,7 +18,8 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
     bool isOnboardingCompleted =
         splashRedirectionStorage.getOnBoarding() ?? false;
     if (isOnboardingCompleted) {
-      emit(SplashNavigateToHome());
+      // emit(SplashNavigateToHome());
+      emit(SplashNavigateToLogin());
     } else {
       emit(SplashNavigateToOnboarding());
     }

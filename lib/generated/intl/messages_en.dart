@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "allReadyRegister": MessageLookupByLibrary.simpleMessage(
+      "All Ready Register ?",
+    ),
     "boardingSubTitle1": MessageLookupByLibrary.simpleMessage(
       "Boarding Sub Title 1",
     ),
@@ -34,8 +37,25 @@ class MessageLookup extends MessageLookupByLibrary {
     "boardingTitle1": MessageLookupByLibrary.simpleMessage("Boarding Title 1"),
     "boardingTitle2": MessageLookupByLibrary.simpleMessage("Boarding Title 2"),
     "boardingTitle3": MessageLookupByLibrary.simpleMessage("Boarding Title 3"),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "enterEmail": MessageLookupByLibrary.simpleMessage("Enter Email"),
+    "enterName": MessageLookupByLibrary.simpleMessage("Enter Name"),
+    "enterPassword": MessageLookupByLibrary.simpleMessage("Enter Password"),
+    "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
+      "Enter Phone Number",
+    ),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "loginScreen": MessageLookupByLibrary.simpleMessage("Login Screen"),
+    "name": MessageLookupByLibrary.simpleMessage("Name"),
+    "newUser": MessageLookupByLibrary.simpleMessage("New User?"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+    "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "splashScreen": MessageLookupByLibrary.simpleMessage("Splash Screen"),
+    "upgrade": MessageLookupByLibrary.simpleMessage("Upgrade"),
   };
 }

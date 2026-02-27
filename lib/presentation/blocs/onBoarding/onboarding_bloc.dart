@@ -21,7 +21,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     on<OnboardingNextPressed>((event, emit) async {
       if (state.index == (state.onBoardingItem?.length ?? 0) - 1) {
         await splashRedirectionStorage.setOnBoarding(true);
-        emit(state.copyWith(redirectHomeScreen: true));
+        emit(state.copyWith(redirectLoginScreen: true));
       } else {
         final next = (state.index + 1).clamp(
           0,
@@ -32,7 +32,7 @@ class OnboardingBloc extends Bloc<OnboardingEvent, OnboardingState> {
     });
     on<OnboardingCompleted>((event, emit) async {
       await splashRedirectionStorage.setOnBoarding(true);
-      emit(state.copyWith(redirectHomeScreen: true));
+      emit(state.copyWith(redirectLoginScreen: true));
     });
   }
 }

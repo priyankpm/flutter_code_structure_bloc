@@ -133,6 +133,111 @@ class S {
   String get next {
     return Intl.message('Next', name: 'next', desc: '', args: []);
   }
+
+  /// `Login Screen`
+  String get loginScreen {
+    return Intl.message(
+      'Login Screen',
+      name: 'loginScreen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `Enter Email`
+  String get enterEmail {
+    return Intl.message('Enter Email', name: 'enterEmail', desc: '', args: []);
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message('Password', name: 'password', desc: '', args: []);
+  }
+
+  /// `Enter Password`
+  String get enterPassword {
+    return Intl.message(
+      'Enter Password',
+      name: 'enterPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message('Login', name: 'login', desc: '', args: []);
+  }
+
+  /// `New User?`
+  String get newUser {
+    return Intl.message('New User?', name: 'newUser', desc: '', args: []);
+  }
+
+  /// `Sign Up`
+  String get signUp {
+    return Intl.message('Sign Up', name: 'signUp', desc: '', args: []);
+  }
+
+  /// `All Ready Register ?`
+  String get allReadyRegister {
+    return Intl.message(
+      'All Ready Register ?',
+      name: 'allReadyRegister',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message('Name', name: 'name', desc: '', args: []);
+  }
+
+  /// `Enter Name`
+  String get enterName {
+    return Intl.message('Enter Name', name: 'enterName', desc: '', args: []);
+  }
+
+  /// `Phone Number`
+  String get phoneNumber {
+    return Intl.message(
+      'Phone Number',
+      name: 'phoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Phone Number`
+  String get enterPhoneNumber {
+    return Intl.message(
+      'Enter Phone Number',
+      name: 'enterPhoneNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message('Home', name: 'home', desc: '', args: []);
+  }
+
+  /// `Upgrade`
+  String get upgrade {
+    return Intl.message('Upgrade', name: 'upgrade', desc: '', args: []);
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message('Profile', name: 'profile', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

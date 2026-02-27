@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:project_structure_bloc/presentation/common/loading/common_loading_widget.dart';
+import 'package:project_structure_bloc/presentation/common/text/common_text.dart';
 import 'package:project_structure_bloc/presentation/utils/app_colors.dart';
 import 'package:project_structure_bloc/presentation/utils/app_constant.dart';
 import 'package:project_structure_bloc/presentation/utils/size.dart';
-import 'package:project_structure_bloc/presentation/utils/styles.dart';
 import 'package:project_structure_bloc/presentation/utils/utils.dart';
 
 class CommonButton extends StatefulWidget {
@@ -15,7 +15,7 @@ class CommonButton extends StatefulWidget {
   final double? size;
   final double? endSvgSize;
   final double? borderWidth;
-  final AppFontStyle? fontWeight;
+  final FontWeight? fontWeight;
   final String? text;
   final bool useIconColor;
   final String? svg;
@@ -129,16 +129,14 @@ class CommonButtonState extends State<CommonButton> {
                           SizedBox(width: Spacing.small),
                         ],
                       ),
-                    Text(
-                      widget.text ?? "",
-                      style: AppTextStyle().commonTextStyle(
-                        fontSize: widget.fontSize ?? 16,
-                        appFontStyle: widget.fontWeight ?? AppFontStyle.bold,
-                        textColor: (widget.isDisabled)
-                            ? widget.disableTextColor ??
-                                  AppColors.textSecondaryColor
-                            : widget.textColor ?? AppColors.textPrimaryColor,
-                      ),
+                    CommonText(
+                      string: widget.text ?? "",
+                      fontSize: widget.fontSize ?? 16,
+                      fontWeight: widget.fontWeight ?? FontWeight.w500,
+                      color: (widget.isDisabled)
+                          ? widget.disableTextColor ??
+                                AppColors.textSecondaryColor
+                          : widget.textColor ?? AppColors.textPrimaryColor,
                     ),
                     if (widget.endSvg != null)
                       Row(

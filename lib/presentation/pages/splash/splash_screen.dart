@@ -31,6 +31,8 @@ class _SplashScreenState extends State<SplashScreen> {
         listener: (context, state) {
           if (state is SplashNavigateToOnboarding) {
             AppNavigator.go(AppRoutes.onBoardingScreen);
+          } else if (state is SplashNavigateToLogin) {
+            AppNavigator.go(AppRoutes.loginScreen);
           } else if (state is SplashNavigateToHome) {
             AppNavigator.go(AppRoutes.homeScreen);
           }
