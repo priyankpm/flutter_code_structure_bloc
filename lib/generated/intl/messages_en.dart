@@ -40,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "boardingTitle1": MessageLookupByLibrary.simpleMessage("Boarding Title 1"),
     "boardingTitle2": MessageLookupByLibrary.simpleMessage("Boarding Title 2"),
     "boardingTitle3": MessageLookupByLibrary.simpleMessage("Boarding Title 3"),
+    "connection_timed_out": MessageLookupByLibrary.simpleMessage(
+      "Connection timed out",
+    ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "enterEmail": MessageLookupByLibrary.simpleMessage("Enter Email"),
     "enterName": MessageLookupByLibrary.simpleMessage("Enter Name"),
@@ -60,6 +63,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "name": MessageLookupByLibrary.simpleMessage("Name"),
     "newUser": MessageLookupByLibrary.simpleMessage("New User?"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "no_internet_connection": MessageLookupByLibrary.simpleMessage(
+      "Oops! No Internet Connection",
+    ),
     "oneLowerCaseLetter": MessageLookupByLibrary.simpleMessage(
       "one lowercase letter",
     ),
@@ -82,8 +88,18 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please enter your confirm password",
     ),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+    "search_here": MessageLookupByLibrary.simpleMessage("search here"),
+    "select_country_code": MessageLookupByLibrary.simpleMessage(
+      "Select Country Code",
+    ),
     "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
+    "something_went_wrong": MessageLookupByLibrary.simpleMessage(
+      "Something went wrong",
+    ),
     "splashScreen": MessageLookupByLibrary.simpleMessage("Splash Screen"),
+    "unexpected_error_occurred": MessageLookupByLibrary.simpleMessage(
+      "Unexpected error occurred",
+    ),
     "upgrade": MessageLookupByLibrary.simpleMessage("Upgrade"),
   };
 }

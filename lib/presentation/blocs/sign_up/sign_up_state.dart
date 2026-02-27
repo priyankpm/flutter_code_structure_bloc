@@ -3,6 +3,8 @@ import 'package:equatable/equatable.dart';
 class SignUpState extends Equatable {
   final String name;
   final String phone;
+  final String countryCode;
+  final String countryISOCode;
   final String email;
   final String password;
   final String? nameError;
@@ -16,6 +18,8 @@ class SignUpState extends Equatable {
   const SignUpState({
     this.name = '',
     this.phone = '',
+    this.countryCode = '+91',
+    this.countryISOCode = 'IN',
     this.email = '',
     this.password = '',
     this.nameError,
@@ -40,6 +44,8 @@ class SignUpState extends Equatable {
   SignUpState copyWith({
     String? name,
     String? phone,
+    String? countryCode,
+    String? countryISOCode,
     String? email,
     String? password,
     String? nameError,
@@ -53,6 +59,8 @@ class SignUpState extends Equatable {
     return SignUpState(
       name: name ?? this.name,
       phone: phone ?? this.phone,
+      countryCode: countryCode ?? this.countryCode,
+      countryISOCode: countryISOCode ?? this.countryISOCode,
       email: email ?? this.email,
       password: password ?? this.password,
       nameError: nameError,
@@ -69,6 +77,8 @@ class SignUpState extends Equatable {
   List<Object?> get props => [
     name,
     phone,
+    countryCode,
+    countryISOCode,
     email,
     password,
     nameError,

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_structure_bloc/generated/l10n.dart';
+import 'package:project_structure_bloc/plugin/CountryCodePicker/phone_number.dart';
 import 'package:project_structure_bloc/presentation/blocs/sign_up/sign_up_bloc.dart';
 import 'package:project_structure_bloc/presentation/blocs/sign_up/sign_up_event.dart';
 import 'package:project_structure_bloc/presentation/blocs/sign_up/sign_up_state.dart';
 import 'package:project_structure_bloc/presentation/common/app_bar/common_app_bar.dart';
 import 'package:project_structure_bloc/presentation/common/buttons/common_button.dart';
 import 'package:project_structure_bloc/presentation/common/text/common_text.dart';
+import 'package:project_structure_bloc/presentation/common/text_field/common_phone_number_textfield.dart';
 import 'package:project_structure_bloc/presentation/common/text_field/common_text_field.dart';
 import 'package:project_structure_bloc/presentation/routes/app_routes.dart';
 import 'package:project_structure_bloc/presentation/utils/app_colors.dart';
@@ -55,18 +57,39 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     keyboardType: TextInputType.text,
                     errorMessage: state.nameError,
                     onChanged: (value) {
-                      context.read<SignUpBloc>().add(SignUpNameChangedEvent(value));
+                      context.read<SignUpBloc>().add(
+                        SignUpNameChangedEvent(value),
+                      );
                     },
                   ),
                   Spacing.height15(),
-                  CommonTextField(
+                  // CommonTextField(
+                  //   labelText: S.of(context).phoneNumber,
+                  //   hintText: S.of(context).enterPhoneNumber,
+                  //   controller: phoneController,
+                  //   keyboardType: TextInputType.phone,
+                  //   errorMessage: state.phoneError,
+                  //   onChanged: (value) {
+                  //     context.read<SignUpBloc>().add(
+                  //       SignUpPhoneChangedEvent(value),
+                  //     );
+                  //   },
+                  // ),
+                  BlocCommonPhoneNumberTextField<SignUpBloc, SignUpState>(
                     labelText: S.of(context).phoneNumber,
                     hintText: S.of(context).enterPhoneNumber,
-                    controller: phoneController,
-                    keyboardType: TextInputType.phone,
-                    errorMessage: state.phoneError,
+                    getValue: (state) {
+                      return PhoneNumber(
+                        countryCode: state.countryCode,
+                        number: state.phone,
+                        countryISOCode: state.countryISOCode,
+                      );
+                    },
+                    errorMessage: state.phone.isNotEmpty ? state.phoneError : null,
                     onChanged: (value) {
-                      context.read<SignUpBloc>().add(SignUpPhoneChangedEvent(value));
+                      context.read<SignUpBloc>().add(
+                        SignUpPhoneChangedEvent(value),
+                      );
                     },
                   ),
                   Spacing.height15(),
@@ -77,7 +100,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     keyboardType: TextInputType.emailAddress,
                     errorMessage: state.emailError,
                     onChanged: (value) {
-                      context.read<SignUpBloc>().add(SignUpEmailChangedEvent(value));
+                      context.read<SignUpBloc>().add(
+                        SignUpEmailChangedEvent(value),
+                      );
                     },
                   ),
                   Spacing.height15(),
@@ -89,7 +114,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     isPassword: true,
                     errorMessage: state.passwordError,
                     onChanged: (value) {
-                      context.read<SignUpBloc>().add(SignUpPasswordChangedEvent(value));
+                      context.read<SignUpBloc>().add(
+                        SignUpPasswordChangedEvent(value),
+                      );
                     },
                   ),
                   Spacing.height15(),

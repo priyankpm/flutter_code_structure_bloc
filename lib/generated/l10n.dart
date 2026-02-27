@@ -333,6 +333,61 @@ class S {
       args: [],
     );
   }
+
+  /// `Something went wrong`
+  String get something_went_wrong {
+    return Intl.message(
+      'Something went wrong',
+      name: 'something_went_wrong',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unexpected error occurred`
+  String get unexpected_error_occurred {
+    return Intl.message(
+      'Unexpected error occurred',
+      name: 'unexpected_error_occurred',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Connection timed out`
+  String get connection_timed_out {
+    return Intl.message(
+      'Connection timed out',
+      name: 'connection_timed_out',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Oops! No Internet Connection`
+  String get no_internet_connection {
+    return Intl.message(
+      'Oops! No Internet Connection',
+      name: 'no_internet_connection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Country Code`
+  String get select_country_code {
+    return Intl.message(
+      'Select Country Code',
+      name: 'select_country_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `search here`
+  String get search_here {
+    return Intl.message('search here', name: 'search_here', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

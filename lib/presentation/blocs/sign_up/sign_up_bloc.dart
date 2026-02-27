@@ -11,8 +11,17 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
     });
 
     on<SignUpPhoneChangedEvent>((event, emit) {
-      final phoneError = Validator.validatePhone(event.phone);
-      emit(state.copyWith(phone: event.phone, phoneError: phoneError));
+      final phoneError = Validator.validatePhone(
+        event.phone.number,
+        minLength: event.phone.minLength,
+        maxLength: event.phone.maxLength,
+      );
+      emit(state.copyWith(
+        phone: event.phone.number,
+        countryCode: event.phone.countryCode,
+        countryISOCode: event.phone.countryISOCode,
+        phoneError: phoneError,
+      ));
     });
 
     on<SignUpEmailChangedEvent>((event, emit) {

@@ -13,4 +13,5 @@ class IconAsset {
   static const String accountIcon = "${icons}account.svg";
   static const String upgradeIcon = "${icons}upgrade.svg";
   static const String homeIcon = "${icons}home.svg";
+  static const String search = "${icons}search.svg";
 }

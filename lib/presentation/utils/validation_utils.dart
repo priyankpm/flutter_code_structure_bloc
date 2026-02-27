@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:project_structure_bloc/generated/l10n.dart';
 import 'package:project_structure_bloc/presentation/utils/app_constant.dart';
 
@@ -41,11 +40,14 @@ extension Validator on String {
     }
   }
 
-  static String? validatePhone(String? value) {
+  static String? validatePhone(String? value, {int minLength = 10, int maxLength = 10}) {
     if (value == null || value.isEmpty) {
       return "Please enter your mobile number";
     }
-    if (value.length < 10) {
+    if (value.length < minLength) {
+      return "Invalid mobile number";
+    }
+    if (value.length > maxLength) {
       return "Invalid mobile number";
     }
     return null;

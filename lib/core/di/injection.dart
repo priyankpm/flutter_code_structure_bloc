@@ -1,5 +1,10 @@
+import 'package:dio/dio.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get_it/get_it.dart';
+import 'package:project_structure_bloc/api/Network/api_client.dart';
+import 'package:project_structure_bloc/core/storage/auth_storage.dart';
 import 'package:project_structure_bloc/core/storage/splash_redirection_storage.dart';
+import 'package:project_structure_bloc/core/storage/token_storage.dart';
 import 'package:project_structure_bloc/domain/useCases/onboarding_use_case.dart';
 import 'package:project_structure_bloc/presentation/blocs/dashboard/dashboard_bloc.dart';
 import 'package:project_structure_bloc/presentation/blocs/login/login_bloc.dart';
@@ -14,6 +19,15 @@ Future<void> initDependencies() async {
   /// Storage
   sl.registerLazySingleton(() => AppPreference());
   sl.registerLazySingleton(() => SplashRedirectionStorage());
+  sl.registerLazySingleton(() => TokenStorage());
+  sl.registerLazySingleton(() => AuthStorage());
+
+  /// Other services
+  sl.registerLazySingleton(
+    () => ApiClient(dio: sl(), tokenStorage: sl(), authStorage: sl()),
+  );
+  sl.registerLazySingleton(() => Dio());
+  sl.registerLazySingleton(() => FirebaseAuth.instance);
 
   /// UseCase
   sl.registerLazySingleton(() => OnboardingUseCase());

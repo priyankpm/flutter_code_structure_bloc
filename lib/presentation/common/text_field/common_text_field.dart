@@ -5,6 +5,7 @@ import 'package:project_structure_bloc/presentation/common/text/common_text.dart
 import 'package:project_structure_bloc/presentation/utils/app_colors.dart';
 import 'package:project_structure_bloc/presentation/utils/asset.dart';
 import 'package:project_structure_bloc/presentation/utils/size.dart';
+import 'package:project_structure_bloc/presentation/utils/styles.dart';
 
 class CommonTextField extends StatefulWidget {
   final bool readOnly;
@@ -144,11 +145,10 @@ class _CommonTextFieldState extends State<CommonTextField> {
                   counterText: "",
                   // contentPadding: const EdgeInsets.all(12),
                   hintText: widget.hintText,
-                  hintStyle: TextStyle(
-                    color: AppColors.textPrimaryColor,
-                    fontWeight: FontWeight.w500,
-                    fontSize: Spacing.normal,
-                    letterSpacing: 0.5,
+                  hintStyle: AppTextStyle().commonTextStyle(
+                    textColor: AppColors.textPrimaryColor,
+                    fontSize: 13,
+                    appFontStyle: AppFontStyle.medium,
                   ),
                   error:
                       (widget.errorMessage != null &&

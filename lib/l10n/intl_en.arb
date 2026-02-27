@@ -34,5 +34,11 @@
   "enterYourMobile": "Enter Your Mobile",
   "invalidMobileNumber": "Invalid Mobile Number",
   "pleaseEnterCPassword": "Please enter your confirm password",
-  "passwordNotMatch": "Your password and confirmation password must match."
+  "passwordNotMatch": "Your password and confirmation password must match.",
+  "something_went_wrong": "Something went wrong",
+  "unexpected_error_occurred": "Unexpected error occurred",
+  "connection_timed_out": "Connection timed out",
+  "no_internet_connection": "Oops! No Internet Connection",
+  "select_country_code" : "Select Country Code",
+  "search_here": "search here"
 }

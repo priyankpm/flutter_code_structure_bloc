@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import 'package:project_structure_bloc/plugin/CountryCodePicker/phone_number.dart';
 
 abstract class SignUpEvent extends Equatable {
   @override
@@ -13,7 +14,7 @@ class SignUpNameChangedEvent extends SignUpEvent {
 }
 
 class SignUpPhoneChangedEvent extends SignUpEvent {
-  final String phone;
+  final PhoneNumber phone;
   SignUpPhoneChangedEvent(this.phone);
   @override
   List<Object?> get props => [phone];
