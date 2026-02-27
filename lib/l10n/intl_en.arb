@@ -24,5 +24,15 @@
   "enterPhoneNumber": "Enter Phone Number",
   "home" : "Home",
   "upgrade" : "Upgrade",
-  "profile" : "Profile"
+  "profile" : "Profile",
+  "atLeast8Characters": "at least 8 characters",
+  "oneUppercaseLetter": "one uppercase letter",
+  "oneLowerCaseLetter": "one lowercase letter",
+  "oneNumber": "one number",
+  "oneSpecialCharacter": "one special character",
+  "passwordMustContain": "Password must contain:",
+  "enterYourMobile": "Enter Your Mobile",
+  "invalidMobileNumber": "Invalid Mobile Number",
+  "pleaseEnterCPassword": "Please enter your confirm password",
+  "passwordNotMatch": "Your password and confirmation password must match."
 }

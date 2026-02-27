@@ -12,7 +12,7 @@ class OnboardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.whiteColor,
+      backgroundColor: AppColors.backgroundColor,
       body: BlocProvider(
         create: (context) =>
             OnboardingBloc(sl(),sl())..add(FetchOnBoardingDetails()),

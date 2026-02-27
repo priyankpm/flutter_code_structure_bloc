@@ -3,7 +3,6 @@ import 'package:project_structure_bloc/generated/l10n.dart';
 import 'package:project_structure_bloc/presentation/common/icon_view/common_icon_view.dart';
 import 'package:project_structure_bloc/presentation/utils/app_colors.dart';
 import 'package:project_structure_bloc/presentation/utils/asset.dart';
-import 'package:project_structure_bloc/presentation/utils/custom_cache_network_image_view.dart';
 import 'package:project_structure_bloc/presentation/utils/size.dart';
 import 'package:project_structure_bloc/presentation/utils/styles.dart';
 

@@ -25,6 +25,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "allReadyRegister": MessageLookupByLibrary.simpleMessage(
       "All Ready Register ?",
     ),
+    "atLeast8Characters": MessageLookupByLibrary.simpleMessage(
+      "at least 8 characters",
+    ),
     "boardingSubTitle1": MessageLookupByLibrary.simpleMessage(
       "Boarding Sub Title 1",
     ),
@@ -44,15 +47,40 @@ class MessageLookup extends MessageLookupByLibrary {
     "enterPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "Enter Phone Number",
     ),
+    "enterYourMobile": MessageLookupByLibrary.simpleMessage(
+      "Enter Your Mobile",
+    ),
     "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
+    "invalidMobileNumber": MessageLookupByLibrary.simpleMessage(
+      "Invalid Mobile Number",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "loginScreen": MessageLookupByLibrary.simpleMessage("Login Screen"),
     "name": MessageLookupByLibrary.simpleMessage("Name"),
     "newUser": MessageLookupByLibrary.simpleMessage("New User?"),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
+    "oneLowerCaseLetter": MessageLookupByLibrary.simpleMessage(
+      "one lowercase letter",
+    ),
+    "oneNumber": MessageLookupByLibrary.simpleMessage("one number"),
+    "oneSpecialCharacter": MessageLookupByLibrary.simpleMessage(
+      "one special character",
+    ),
+    "oneUppercaseLetter": MessageLookupByLibrary.simpleMessage(
+      "one uppercase letter",
+    ),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordMustContain": MessageLookupByLibrary.simpleMessage(
+      "Password must contain:",
+    ),
+    "passwordNotMatch": MessageLookupByLibrary.simpleMessage(
+      "Your password and confirmation password must match.",
+    ),
     "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
+    "pleaseEnterCPassword": MessageLookupByLibrary.simpleMessage(
+      "Please enter your confirm password",
+    ),
     "profile": MessageLookupByLibrary.simpleMessage("Profile"),
     "signUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
     "splashScreen": MessageLookupByLibrary.simpleMessage("Splash Screen"),

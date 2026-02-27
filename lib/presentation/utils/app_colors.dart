@@ -28,6 +28,7 @@ class AppColors {
   static Color backArrowColor = _LightColor.radioColor;
   static Color textDefaultColor = _LightColor.textDefaultColor;
   static Color textDisableColor = _LightColor.textDisableColor;
+  static Color buttonDisableColor = _LightColor.buttonDisableColor;
 
   static Future<void> changeThemeColor({required String usedTheme}) async {
     await AppPreference.setUseThemeName(usedTheme);
@@ -56,6 +57,7 @@ class AppColors {
       backArrowColor = _DarkColor.backArrowColor;
       textDefaultColor = _DarkColor.textDefaultColor;
       textDisableColor = _DarkColor.textDisableColor;
+      buttonDisableColor = _DarkColor.buttonDisableColor;
     } else {
       /// TODO : Light Theme
       primaryColor = _LightColor.primaryColor;
@@ -79,6 +81,7 @@ class AppColors {
       backArrowColor = _LightColor.backArrowColor;
       textDefaultColor = _LightColor.textDefaultColor;
       textDisableColor = _LightColor.textDisableColor;
+      buttonDisableColor = _LightColor.buttonDisableColor;
     }
   }
 }
@@ -105,6 +108,7 @@ class _DarkColor {
   static Color transparentColor = Colors.transparent;
   static Color textDefaultColor = const Color(0xFFF6F6F6);
   static Color textDisableColor = const Color(0xFF949494);
+  static Color buttonDisableColor = const Color(0xFFC5C5C5);
 }
 
 class _LightColor {
@@ -129,4 +133,5 @@ class _LightColor {
   static Color transparentColor = Colors.transparent;
   static Color textDefaultColor = const Color(0xFF151515);
   static Color textDisableColor = const Color(0xFFA1A1A1);
+  static Color buttonDisableColor = const Color(0xFFA1A1A1);
 }

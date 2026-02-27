@@ -6,6 +6,8 @@ import 'package:project_structure_bloc/presentation/blocs/onBoarding/onboarding_
 import 'package:project_structure_bloc/presentation/blocs/sign_up/sign_up_bloc.dart';
 import 'package:project_structure_bloc/presentation/blocs/splash/splash_bloc.dart';
 
+import 'package:project_structure_bloc/presentation/blocs/theme/theme_bloc.dart';
+
 class AppProviders {
   static List<BlocProvider> get providers => [
     BlocProvider<SplashBloc>(create: (context) => SplashBloc(sl())),
@@ -13,6 +15,7 @@ class AppProviders {
       create: (context) => OnboardingBloc(sl(), sl()),
     ),
     BlocProvider<DashboardBloc>(create: (context) => DashboardBloc()),
+    BlocProvider<ThemeBloc>(create: (context) => ThemeBloc()),
     BlocProvider<LoginBloc>(create: (context) => LoginBloc()),
     BlocProvider<SignUpBloc>(create: (context) => SignUpBloc()),
   ];

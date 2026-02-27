@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_structure_bloc/core/di/injection.dart';
 import 'package:project_structure_bloc/core/providers/app_providers.dart';
+import 'package:project_structure_bloc/presentation/blocs/theme/theme_bloc.dart';
+import 'package:project_structure_bloc/presentation/blocs/theme/theme_state.dart';
 import 'package:project_structure_bloc/presentation/routes/app_routes.dart';
 import 'package:project_structure_bloc/presentation/utils/app_constant.dart';
 import 'package:project_structure_bloc/presentation/utils/app_preference.dart';
@@ -26,15 +28,16 @@ Future<void> main() async {
   runApp(MultiBlocProvider(providers: AppProviders.providers, child: MyApp()));
 }
 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder(
-      valueListenable: currentUsedTheme,
-      builder: (context, value, child) {
+    return BlocBuilder<ThemeBloc, ThemeState>(
+      builder: (context, state) {
         return MaterialApp.router(
+          key: ValueKey(state.themeName),
           debugShowCheckedModeBanner: false,
           title: AppConstant.appName,
           theme: ThemeData(hoverColor: Colors.transparent),

@@ -238,6 +238,101 @@ class S {
   String get profile {
     return Intl.message('Profile', name: 'profile', desc: '', args: []);
   }
+
+  /// `at least 8 characters`
+  String get atLeast8Characters {
+    return Intl.message(
+      'at least 8 characters',
+      name: 'atLeast8Characters',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `one uppercase letter`
+  String get oneUppercaseLetter {
+    return Intl.message(
+      'one uppercase letter',
+      name: 'oneUppercaseLetter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `one lowercase letter`
+  String get oneLowerCaseLetter {
+    return Intl.message(
+      'one lowercase letter',
+      name: 'oneLowerCaseLetter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `one number`
+  String get oneNumber {
+    return Intl.message('one number', name: 'oneNumber', desc: '', args: []);
+  }
+
+  /// `one special character`
+  String get oneSpecialCharacter {
+    return Intl.message(
+      'one special character',
+      name: 'oneSpecialCharacter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain:`
+  String get passwordMustContain {
+    return Intl.message(
+      'Password must contain:',
+      name: 'passwordMustContain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Mobile`
+  String get enterYourMobile {
+    return Intl.message(
+      'Enter Your Mobile',
+      name: 'enterYourMobile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Mobile Number`
+  String get invalidMobileNumber {
+    return Intl.message(
+      'Invalid Mobile Number',
+      name: 'invalidMobileNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please enter your confirm password`
+  String get pleaseEnterCPassword {
+    return Intl.message(
+      'Please enter your confirm password',
+      name: 'pleaseEnterCPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your password and confirmation password must match.`
+  String get passwordNotMatch {
+    return Intl.message(
+      'Your password and confirmation password must match.',
+      name: 'passwordNotMatch',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

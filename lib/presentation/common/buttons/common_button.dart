@@ -71,7 +71,7 @@ class CommonButtonState extends State<CommonButton> {
   @override
   Widget build(BuildContext context) {
     final buttonButton = (widget.isDisabled)
-        ? widget.disableButtonColor ?? AppColors.whiteColor
+        ? widget.disableButtonColor ?? AppColors.buttonDisableColor
         : widget.buttonColor ?? AppColors.primaryColor;
     return GestureDetector(
       onTap: (widget.isLoader || widget.isDisabled)
