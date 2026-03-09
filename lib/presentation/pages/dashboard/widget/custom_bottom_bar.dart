@@ -41,7 +41,7 @@ class CustomBottomBar extends StatelessWidget {
         color: AppColors.appbarBgColor,
         border: Border.all(color: AppColors.borderColor, width: 0.5),
       ),
-      padding: const EdgeInsets.symmetric(
+      padding: EdgeInsets.symmetric(
         vertical: Spacing.medium,
         horizontal: Spacing.xSmall,
       ),

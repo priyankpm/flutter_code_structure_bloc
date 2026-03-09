@@ -48,6 +48,7 @@ dependencies:
   dart_either: ^2.0.0
   firebase_auth: ^5.5.4
   sign_in_with_apple: ^7.0.1
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:

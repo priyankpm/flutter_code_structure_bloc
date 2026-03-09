@@ -42,7 +42,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           },
           builder: (context, state) {
             return Padding(
-              padding: .symmetric(
+              padding: EdgeInsets.symmetric(
                 vertical: Spacing.small,
                 horizontal: Spacing.medium,
               ),

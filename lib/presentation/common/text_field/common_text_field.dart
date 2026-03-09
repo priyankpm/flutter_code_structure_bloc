@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:project_structure_bloc/presentation/common/error_view/error_text_widget.dart';
 import 'package:project_structure_bloc/presentation/common/icon_view/common_icon_view.dart';
 import 'package:project_structure_bloc/presentation/common/text/common_text.dart';
@@ -80,7 +81,7 @@ class _CommonTextFieldState extends State<CommonTextField> {
       children: [
         if (widget.labelText != null && (widget.labelText?.isNotEmpty ?? false))
           Padding(
-            padding: EdgeInsets.only(bottom: 8),
+            padding: EdgeInsets.only(bottom: 8.h),
             child: CommonText(
               string: widget.labelText ?? "",
               fontWeight: FontWeight.w600,
@@ -100,7 +101,7 @@ class _CommonTextFieldState extends State<CommonTextField> {
                 readOnly: widget.readOnly,
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
-                  fontSize: Spacing.medium,
+                  fontSize: Spacing.medium.sp,
                   color: AppColors.textPrimaryColor,
                   letterSpacing: 0.5,
                 ),
@@ -147,7 +148,7 @@ class _CommonTextFieldState extends State<CommonTextField> {
                   hintText: widget.hintText,
                   hintStyle: AppTextStyle().commonTextStyle(
                     textColor: AppColors.textPrimaryColor,
-                    fontSize: 13,
+                    fontSize: 13.sp,
                     appFontStyle: AppFontStyle.medium,
                   ),
                   error:
@@ -159,13 +160,13 @@ class _CommonTextFieldState extends State<CommonTextField> {
                   fillColor: widget.fillColor ?? AppColors.cardBgColor,
                   disabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(widget.radius ?? 50),
+                      Radius.circular((widget.radius ?? 50).r),
                     ),
                     borderSide: BorderSide(color: AppColors.cardBgColor2),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(widget.radius ?? 50),
+                      Radius.circular((widget.radius ?? 50).r),
                     ),
                     borderSide: BorderSide(
                       color: widget.enableColor ?? AppColors.cardBgColor2,
@@ -173,7 +174,7 @@ class _CommonTextFieldState extends State<CommonTextField> {
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(widget.radius ?? 50),
+                      Radius.circular((widget.radius ?? 50).r),
                     ),
                     borderSide: BorderSide(
                       color: widget.focusedColor ?? AppColors.cardBgColor2,
@@ -181,13 +182,13 @@ class _CommonTextFieldState extends State<CommonTextField> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(widget.radius ?? 50),
+                      Radius.circular((widget.radius ?? 50).r),
                     ),
                     borderSide: BorderSide(color: AppColors.textPrimaryColor),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(widget.radius ?? 50),
+                      Radius.circular((widget.radius ?? 50).r),
                     ),
                     borderSide: BorderSide(color: AppColors.redColor),
                   ),

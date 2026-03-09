@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
           },
           builder: (context, state) {
             return Padding(
-              padding: .symmetric(
+              padding: EdgeInsets.symmetric(
                 vertical: Spacing.small,
                 horizontal: Spacing.medium,
               ),

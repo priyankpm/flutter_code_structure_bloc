@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:project_structure_bloc/presentation/utils/app_colors.dart';
 import 'package:project_structure_bloc/presentation/utils/app_constant.dart';
 
@@ -45,7 +46,7 @@ class CommonText extends StatelessWidget {
       softWrap: softWrap ?? false,
       style: TextStyle(
           fontStyle: fontStyle,
-          fontSize: fontSize,
+          fontSize: fontSize?.sp,
           fontWeight: fontWeight,
           color: color ?? AppColors.textPrimaryColor,
           letterSpacing: letterSpacing,

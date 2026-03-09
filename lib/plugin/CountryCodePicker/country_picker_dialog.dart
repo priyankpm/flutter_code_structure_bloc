@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:project_structure_bloc/generated/l10n.dart';
 import 'package:project_structure_bloc/plugin/CountryCodePicker/helpers.dart';
 import 'package:project_structure_bloc/presentation/common/text/common_text.dart';
 import 'package:project_structure_bloc/presentation/common/text_field/common_text_field.dart';
 import 'package:project_structure_bloc/presentation/utils/app_colors.dart';
 import 'package:project_structure_bloc/presentation/utils/app_constant.dart';
-import 'package:project_structure_bloc/presentation/utils/asset.dart';
 import 'package:project_structure_bloc/presentation/utils/size.dart';
 import 'package:project_structure_bloc/presentation/utils/styles.dart';
 
@@ -144,7 +142,7 @@ class _CountryPickerDialogState extends State<CountryPickerDialog> {
                   shrinkWrap: true,
                   itemCount: _filteredCountries.length,
                   itemBuilder: (ctx, index) => Padding(
-                    padding: const EdgeInsets.only(bottom: Spacing.medium),
+                    padding: EdgeInsets.only(bottom: Spacing.medium),
                     child: GestureDetector(
                       onTap: () {
                         _selectedCountry = _filteredCountries[index];
